@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bubble_background"
+    android:elevation="8dp"
+    android:padding="12dp"
+    android:gravity="center">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ai"
+        android:scaleType="centerCrop"
+        android:contentDescription="Jarvis Logo"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- App Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JARVIS"
+        android:textColor="#4FC3F7"
+        android:textSize="12sp"
+        android:letterSpacing="0.3"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvJarvisText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What can I help you with, sir?"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="Speak"/>
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Close"/>
+
+    </LinearLayout>
+
+</LinearLayout>
